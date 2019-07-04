@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+ul.social li,
+ul#menu li {
+    display: inline-block;
+}
+
+.social {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.last-comments ul {
+    list-style: none;
+}
+
+.last-comments > ul {
+    padding-left: 0;
+}
+
+.last-comments li > div:first-child {
+    float: left;
+    width: 55px;
+}
+
+.last-comments li > div:nth-child(2) {
+    margin-left: 60px;
+}
+.last-comments li > div:nth-child(2):after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.last-comments .comment-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.img-hover-zoom {
+    border-radius: 5px;
+}
+
+address {
+    display: block;
+    font-style: italic;
+}
+
+address a {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: center;
+}
+
+
+/* subscribe-form styles -------- */
+.subscription-form {
+    background: #0c3e5f;
+    color: #fefefe;
+    padding: 2rem;
+    border-radius: 0;
+}
+
+.subscription-form .button,
+.input-group-field {
+    width: 100%;
+    margin: 10px 0 5px 0;
+    padding: 0;
+}
+
+form.search input[type=text] {
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+form.search button {
+    margin: 15px 0 15px 0;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.tagcloud {
+    text-align: center;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+/* Clear floats */
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a:hover {
+    color: tomato;
+}
+
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.full-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fde16d;
+}
+
+.empty-stars:before,
+.full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 14pt;
+}
+#menuToggle > input[type="checkbox"] {
+    display: none;
+}
