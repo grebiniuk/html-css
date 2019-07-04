@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,9 +16,29 @@ a {
     transition: color 0.3s ease;
 }
 
+.page-header {
+    box-shadow: 0px 10px 20px -22px rgba(0, 0, 0, .8);
+}
+
+
+footer {
+    box-shadow: 0px -10px 20px -22px rgba(0, 0, 0, .8);
+}
+aside {
+    box-shadow: -10px 0px 20px -22px rgba(0, 0, 0, .8);
+}
+
+.rest-aside {
+    padding-left: 10px;
+}
 ul.social li,
 ul#menu li {
     display: inline-block;
+}
+
+#menu li {
+    font-size: 1.5rem;
+    padding-left: 20px;
 }
 
 .social {
@@ -62,6 +83,7 @@ img {
 
 .img-hover-zoom {
     border-radius: 5px;
+    margin: auto;
 }
 
 address {
@@ -80,21 +102,29 @@ address a {
 
 /* subscribe-form styles -------- */
 .subscription-form {
-    background: #0c3e5f;
-    color: #fefefe;
-    padding: 2rem;
+    color: #000;
     border-radius: 0;
+    text-align: center;
 }
 
+.subscription-form h4 {
+    margin-bottom: 10px;
+}
 .subscription-form .button,
 .input-group-field {
     width: 100%;
-    margin: 10px 0 5px 0;
-    padding: 0;
+    margin: 5px 0 5px 0;
+    padding: 10px;
 }
 
+.subscription-form .button,
+form.search button {
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+}
 form.search input[type=text] {
-    margin: 15px 0 15px 0;
+    margin: 30px 0 15px 0;
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
@@ -104,19 +134,17 @@ form.search input[type=text] {
 }
 
 form.search button {
-    margin: 15px 0 15px 0;
+    margin: 30px 0 15px 0;
     float: left;
     width: 30%;
     padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
 }
 
 .tagcloud {
+    margin: 30px 0 30px 0;
     text-align: center;
 }
 
@@ -161,3 +189,8 @@ a:hover {
 #menuToggle > input[type="checkbox"] {
     display: none;
 }
+
+.author {
+    text-align: center;
+}
+

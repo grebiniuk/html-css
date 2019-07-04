@@ -7,7 +7,7 @@
             "main aside1"
             "main aside2"
             "footer footer";
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 header.page-header {
@@ -18,7 +18,7 @@ header.page-header {
     grid-template-areas:
             "logo social"
             "logo menu";
-    grid-gap: 10px;
+    grid-gap: 15px;
     justify-content: left;
 }
 
@@ -40,6 +40,9 @@ aside.rest-aside{
 
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 30px;
 }
 
 .page-header__logo {
